@@ -1,21 +1,26 @@
 # Band-Protocol
+## Installation
+To get started with Band-Protocol, clone the repository using the following command:
 ```
 git clone https://github.com/SoSorryTT/Band-Protocol.git
 ```
-## How to run
+## Usage
 ### Problem1
+To run the solution for Problem 1, navigate to the Band-Protocol directory and execute the following command:
 ```
 cd Band-Protocol
 go run problem1.go
 ```
 
 ### Problem2
+To run the solution for Problem 2, navigate to the Band-Protocol directory and execute the following command:
 ```
 cd Band-Protocol
 go run problem2.go
 ```
 
 ### Problem3
+To run the solution for Problem 3, navigate to the Band-Protocol/problem3 directory and execute the following command:
 ```
 cd Band-Protocol/problem3
 go run problem3.go
