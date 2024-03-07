@@ -1,6 +1,6 @@
 package main
 
-func main() {
+func Problem1() {
 	//testcase data
 	input1 := "SRSSRRR"
 	input2 := "RSSRR"

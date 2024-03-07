@@ -2,6 +2,7 @@ package pkg
 
 import (
 	"bytes"
+	"fmt"
 	"io"
 	"net/http"
 )
@@ -35,6 +36,10 @@ func (c ServerClient) Execute(endpointRoute string, requestMethod string, bodyPa
 	defer response.Body.Close()
 	if err != nil {
 		return nil, err
+	}
+	// Check if response status code is not 200 OK
+	if response.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("unexpected status code: %d", response.StatusCode)
 	}
 	body, err := io.ReadAll(response.Body)
 	if err != nil {

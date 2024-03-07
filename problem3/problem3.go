@@ -1,4 +1,4 @@
-package main
+package problem3
 
 import (
 	"assignment/band-protocol/problem3/pkg"
@@ -6,15 +6,17 @@ import (
 	"time"
 )
 
-func main() {
+func Problem3() {
 	server := pkg.NewServerClient()
 
 	//1. Broadcast Transaction
+	//create a payload
 	payload := pkg.SentTransactionPayload{
 		Symbol:    "ETH",
 		Price:     4500,
 		Timestamp: uint64(time.Now().Unix()),
 	}
+	//create a http request
 	result, err := server.SentTransaction(payload)
 	if err != nil {
 		log.Println(err)
@@ -25,6 +27,7 @@ func main() {
 	log.Println("tx_hash :", result.TxHash)
 
 	//2. Transaction Status Monitoring
+	//create a http request
 	result2, err := server.GetTransactionStatus(result.TxHash)
 	if err != nil {
 		log.Println(err)

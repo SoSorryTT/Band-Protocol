@@ -1,6 +1,6 @@
 package main
 
-func main() {
+func Problem2() {
 	//test data
 	n1 := 5
 	k1 := 5
