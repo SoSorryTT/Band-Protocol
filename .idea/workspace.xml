@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="97a29b39-dd58-4877-8cb9-8202150ac894" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/problem1.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem2.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem3/pkg/get_transaction_status.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem3/pkg/get_transaction_status.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem3/pkg/sent_broadcast_transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem3/pkg/sent_broadcast_transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem3/pkg/server_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem3/pkg/server_client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem3/problem3.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem3/problem3.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file:///opt/homebrew/opt/go/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2dLZ3fbM6j7QSJDTz2XuAAlv2Xz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/mark/Documents/Band-Protocol",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/problem3/pkg" />
+      <recent name="$PROJECT_DIR$/problem3" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build assignment/band-protocol">
+    <configuration name="go build assignment/band-protocol" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Band-Protocol" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="assignment/band-protocol" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/problem1.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build assignment/band-protocol/problem3" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Band-Protocol" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="assignment/band-protocol/problem3" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/problem3/problem3.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Band-Protocol" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="assignment/band-protocol" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build assignment/band-protocol" />
+        <item itemvalue="Go Build.go build assignment/band-protocol/problem3" />
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

@@ -5,25 +5,26 @@ import (
 	"fmt"
 )
 
-// Struct of payload
+// SentTransactionPayload Struct of payload
 type SentTransactionPayload struct {
 	Symbol    string
 	Price     uint64
 	Timestamp uint64
 }
 
-// Struct receive a body from server
+// SentTransactionResponseBody Struct receive a body from server
 type SentTransactionResponseBody struct {
 	TxHash string `json:"tx_hash"`
 }
 
-// Internal struct for return
+// Transaction Internal struct for return
 type Transaction struct {
 	TxHash string
 }
 
+// SentTransaction run time is O(n) because it depend on return payload data
 func (c ServerClient) SentTransaction(input SentTransactionPayload) (Transaction, error) {
-	//convert and marshaling a payload input to JSON
+	// Convert and marshaling a payload input to JSON
 	jsonMapInstanceQuery := map[string]interface{}{
 		"symbol":    input.Symbol,
 		"price":     input.Price,

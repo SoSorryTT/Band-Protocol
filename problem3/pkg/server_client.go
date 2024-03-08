@@ -8,10 +8,10 @@ import (
 )
 
 type ServerClient struct {
-	//key or something for auth here
-	//usually it will be an auth to put in header
-	//but in this case I think the question did not provide,
-	//so I'm going to skip
+	// key or something for auth here
+	// usually it will be an auth to put in header
+	// but in this case I think the question did not provide,
+	// so I'm going to skip
 }
 
 func NewServerClient() ServerClient {

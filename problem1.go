@@ -1,7 +1,7 @@
 package main
 
 func Problem1() {
-	//testcase data
+	// Testcase data
 	input1 := "SRSSRRR"
 	input2 := "RSSRR"
 	input3 := "SSSRRRRS"
@@ -22,7 +22,7 @@ func Problem1() {
 
 // CheckGoodBoy run time is O(n) because it do only 1 loop and the other are O(1)
 func CheckGoodBoy(inputString string) string {
-	//if big boss shoot first return Bad boy
+	// If big boss shoot first return Bad boy
 	if inputString[0] == 'R' {
 		return "Bad boy"
 	}
@@ -31,11 +31,11 @@ func CheckGoodBoy(inputString string) string {
 	checkRevenge := false
 	for _, c := range inputString {
 		if c == 'S' {
-			//if big boss revenge check condition
+			// If big boss revenge check condition
 			if checkRevenge && countRevenge-countShoot < 0 {
-				return "Bad boy" //return Bad boy if revenge fail
+				return "Bad boy" // Return Bad boy if revenge fail
 			} else if checkRevenge {
-				//if revenge not fail reset value
+				// If revenge not fail reset value
 				checkRevenge = false
 				countShoot = 0
 				countRevenge = 0
@@ -43,10 +43,10 @@ func CheckGoodBoy(inputString string) string {
 			countShoot += 1
 		} else if c == 'R' {
 			countRevenge += 1
-			checkRevenge = true //check if big boss revenge?
+			checkRevenge = true // Check if big boss revenge?
 		}
 	}
-	//if revenge success return Good boy
+	// If revenge success return Good boy
 	if countRevenge >= countShoot && inputString[len(inputString)-1] != 'S' {
 		return "Good boy"
 	}
