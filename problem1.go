@@ -7,6 +7,7 @@ func Problem1() {
 	input3 := "SSSRRRRS"
 	input4 := "SSRR"
 	input5 := "SRRSSR"
+	input6 := "SSRSRRRRR"
 
 	test1 := CheckGoodBoy(input1)
 	println("test1 : ", test1)
@@ -18,38 +19,27 @@ func Problem1() {
 	println("test4 : ", test4)
 	test5 := CheckGoodBoy(input5)
 	println("test5 : ", test5)
+	test6 := CheckGoodBoy(input6)
+	println("test6 : ", test6)
 }
 
 // CheckGoodBoy run time is O(n) because it do only 1 loop and the other are O(1)
 func CheckGoodBoy(inputString string) string {
-	// If big boss shoot first return Bad boy
-	if inputString[0] == 'R' {
+	// If big boss shoot first and cannot revenge return Bad boy
+	if inputString[0] == 'R' || inputString[len(inputString)-1] == 'S'  {
 		return "Bad boy"
 	}
-	countShoot := 0
-	countRevenge := 0
-	checkRevenge := false
+
+	countS := 0
 	for _, c := range inputString {
 		if c == 'S' {
-			// If big boss revenge check condition
-			if checkRevenge && countRevenge-countShoot < 0 {
-				return "Bad boy" // Return Bad boy if revenge fail
-			} else if checkRevenge {
-				// If revenge not fail reset value
-				checkRevenge = false
-				countShoot = 0
-				countRevenge = 0
-			}
-			countShoot += 1
-		} else if c == 'R' {
-			countRevenge += 1
-			checkRevenge = true // Check if big boss revenge?
+			countS += 1
+		} else if countS > 0 {
+			countS -= 1
 		}
 	}
-	// If revenge success return Good boy
-	if countRevenge >= countShoot && inputString[len(inputString)-1] != 'S' {
-		return "Good boy"
+	if countS > 0 {
+		return "Bad boy"
 	}
-
-	return "Bad boy"
+	return "Good boy"
 }
